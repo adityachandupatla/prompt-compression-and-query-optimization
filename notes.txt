@@ -1,0 +1,15 @@
+
+Pydantic is a python library used for data validation, modelling and management. It ensures the data conforms to a user-defined model (python-class) by performing necessary conversions (i.e. no null values, data format, etc)
+
+Prompt compression:
+
+	Even though LLM's support long context windows, it becomes prohibitively expensive if we are not careful in the amount of contexting we are dumping into the model. Remember, the model providers charge based on the number of input and output tokens.
+
+	The latency also increases proportionately with the context size.
+
+	Prompt compression aims to achieve the same output quality while compressing the original input prompt. The result would be lesser cost and faster response times!
+
+	The compression is done via small-language-model which is fine-tuned for compressing prompts. It is typically less costly than the base LLM which you are using for your task.
+
+	Note: We use prompt compression after the RAG process is done, i.e., the original prompt along with all the relevant context is compressed
+
