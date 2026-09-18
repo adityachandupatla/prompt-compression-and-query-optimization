@@ -3,7 +3,7 @@ Pydantic is a python library used for data validation, modelling and management.
 
 Prompt compression:
 
-	Even though LLM's support long context windows, it becomes prohibitively expensive if we are not careful in the amount of contexting we are dumping into the model. Remember, the model providers charge based on the number of input and output tokens.
+	Even though LLM's support long context windows, it becomes prohibitively expensive if we are not careful in the amount of context we are dumping into the model. Remember, the model providers charge based on the number of input and output tokens.
 
 	The latency also increases proportionately with the context size.
 
